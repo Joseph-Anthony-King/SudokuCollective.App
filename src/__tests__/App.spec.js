@@ -11,10 +11,7 @@ describe('App', () => {
   })
 
   it('renders Vuetify components with the light theme', () => {
-    const wrapper = mount(
-      { template: '<v-btn>Play</v-btn>' },
-      { global: { plugins: [vuetify] } },
-    )
+    const wrapper = mount({ template: '<v-btn>Play</v-btn>' }, { global: { plugins: [vuetify] } })
 
     expect(wrapper.get('button').text()).toContain('Play')
     expect(wrapper.get('button').classes()).toContain('v-theme--light')
