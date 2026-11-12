@@ -11,7 +11,13 @@ import { useAdminStore } from '@/stores/adminStore'
 
 const adminStore = useAdminStore()
 const message = ref('Vue Sudoku')
-const updateMessageStrings = ['Vue Sudoku', 'Vue Sudoku .', 'Vue Sudoku ..', 'Vue Sudoku ...']
+const updateMessageStrings = [
+  'Vue Sudoku',
+  'Vue Sudoku .',
+  'Vue Sudoku ..',
+  'Vue Sudoku ...',
+  'Vue Sudoku ...Coming Soon!',
+]
 let index = 1
 
 const getMessage = computed(() => adminStore.getMessage())
