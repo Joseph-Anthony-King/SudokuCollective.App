@@ -30,8 +30,12 @@ const updateMessage = () => {
 }
 
 onMounted(async () => {
-  await adminStore.initializeStoreAsync()
   updateMessage()
+  try {
+    await adminStore.initializeStoreAsync()
+  } catch (error) {
+    console.error('Unable to initialize the admin store', error)
+  }
 })
 </script>
 
