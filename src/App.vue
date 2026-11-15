@@ -13,10 +13,10 @@ const adminStore = useAdminStore()
 const message = ref('Vue Sudoku')
 const updateMessageStrings = [
   'Vue Sudoku',
-  'Vue Sudoku .',
-  'Vue Sudoku ..',
-  'Vue Sudoku ...',
-  'Vue Sudoku ...Coming Soon!',
+  'Vue Sudoku.',
+  'Vue Sudoku..',
+  'Vue Sudoku...',
+  'Vue Sudoku... Coming Soon!',
 ]
 let index = 1
 
